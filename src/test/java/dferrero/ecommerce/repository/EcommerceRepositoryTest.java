@@ -8,9 +8,9 @@ import static dferrero.ecommerce.util.TestsUtil.buildPriceObject;
 import static org.junit.jupiter.api.Assertions.*;
 
 import dferrero.ecommerce.util.PriceUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -33,7 +33,7 @@ public class EcommerceRepositoryTest {
     private Long productId;
     private Long brandId;
 
-    @Before
+    @BeforeEach
     public void initTests() {
         productId = 35455L;
         brandId = 1L;
